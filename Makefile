@@ -1,5 +1,5 @@
 
-CC = cc 
+CC = cc -Wall -Wextra -Werror
 
 SRC = $(wildcard *.c) $(wildcard ./libft/*.c)
 
