@@ -552,6 +552,24 @@ int	check_left(s_input **head)
 	}
 	return (1);
 }
+/***** hadi gha l print dyal tree *********/
+const char *token_to_string(s_token tok) {
+    switch (tok) {
+        case IN:      return "<";
+        case OUT:     return ">";
+        case HEREDOC: return "<<";
+        case APPEND:  return ">>";
+        case AND:     return "&&";
+        case PIPE:    return "|";
+        case OR:      return "||";
+        case LPR:     return "(";
+        case RPR:     return ")";
+        case STR:     return "STRING"; // You may want to represent actual strings instead
+        case END:     return "END";
+        default:      return "UNKNOWN";
+    }
+}
+/***** hadi gha l print dyal tree *********/
 
 int main(int argc, char **argv, char **env)
 {
