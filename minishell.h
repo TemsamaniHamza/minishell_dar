@@ -10,16 +10,16 @@
 
 typedef enum t_token
 {
-	IN,         // <
-	OUT,        // >
-	HEREDOC,    // <<
-	APPEND,     // >>
-	AND,        // &&    
-	PIPE,       // |
-	OR,         // ||
-	LPR,        // (
-	RPR,        // )
-	STR,        // string
+	IN,         // <		0
+	OUT,        // >		1
+	HEREDOC,    // <<		2
+	APPEND,     // >>		3
+	AND,        // &&		4
+	PIPE,       // |		5
+	OR,         // ||		6
+	LPR,        // (		7
+	RPR,        // )		8
+	STR,        // string	9
 	END         // end dyal cmd
 }   s_token;
 
@@ -73,7 +73,7 @@ char **fill_command(char *s, int l, int *k, int flg);
 char **prep_cmd(char *s, int *i, s_token tok, int flg);
 int token_1(s_input **head, char *s, int *i, int *par);
 int check_left(s_input **head);
-void	pop(s_input **tok_s);
+void	remove_top(s_input **tok_s);
 int	build_command_list(s_input **head, s_input *add);
 int	check_syntax_help(s_token tok, s_token next);
 
