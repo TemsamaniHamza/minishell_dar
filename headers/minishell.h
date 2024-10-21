@@ -6,7 +6,7 @@
 # include <unistd.h>
 # include <readline/readline.h>
 # include <readline/history.h>
-# include "libft_torename/libft.h"
+# include "../libft_torename/libft.h"
 
 typedef enum t_token
 {

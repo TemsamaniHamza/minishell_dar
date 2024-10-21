@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "../headers/minishell.h"
 
 s_token	check_token(char c1, char c2)
 {

@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "../headers/minishell.h"
 
 s_input	*list_to_tree(s_input *root)
 {

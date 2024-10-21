@@ -14,7 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-# include "../minishell.h"
+# include "../headers/minishell.h"
 
 size_t				ft_strlen(const char *s);
 void				*ft_memset(void *s, int c, size_t n);

@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "../headers/minishell.h"
 
 int	build_command_list(s_input **head, s_input *add)
 {

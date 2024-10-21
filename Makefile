@@ -1,7 +1,7 @@
 
 CC = cc -Wall -Wextra -Werror
 
-SRC = $(wildcard *.c) $(wildcard ./libft_torename/*.c)
+SRC = $(wildcard ./parsing/*.c) $(wildcard ./libft_torename/*.c)
 
 OBJ = $(SRC:.c=.o)
 

@@ -1,4 +1,4 @@
-#include "minishell.h"
+#include "../headers/minishell.h"
 
 void	shunting_yard(s_input **head, s_input **tok_stack, s_input **new_stack)
 {
