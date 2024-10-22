@@ -44,6 +44,12 @@ typedef struct t_input
 	s_redir			*redirections;
 }   s_input;
 
+typedef struct t_global
+{
+	char			**env;
+	struct t_input	input;
+}	s_global;
+
 s_token 		check_token(char c1, char c2);
 int 			check_beggining_of_str(char *str);
 void 			shunting_yard(s_input **head, s_input **tok_stack, s_input **new_stack);
@@ -76,5 +82,11 @@ int 			check_left(s_input **head);
 void			remove_top(s_input **tok_s);
 int				build_command_list(s_input **head, s_input *add);
 int				check_syntax_help(s_token tok, s_token next);
+int 			ft_check_env(s_input *input, char **env);
+void 			ft_expansion(s_input *input, s_global *global);
+int 			ft_isspace(char c);
+void 			expand_printf(char *output);
+
+
 
 #endif
