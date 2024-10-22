@@ -18,13 +18,7 @@ const char* token_to_string(s_token token) {
         case END:      return "end of command";
         default:       return "unknown token";
     }
-}
-// end of it
 
-// char **cmd(s_token *input)
-// {
-        
-// }
 void    ft_initialize(char **env)
 {
     global = malloc(sizeof(s_global)); 
@@ -42,12 +36,6 @@ void    ft_initialize(char **env)
         global->env[i] = ft_strdup(env[i]);
         i++;
     }
-    i = 0;
-    // while(global->env[i])
-    // {
-    //     printf("%s\n", global->env[i]);
-    //     i++;
-    // }
 }
 
 int ft_check_env(s_input *input, char **env)
